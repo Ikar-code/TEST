@@ -173,10 +173,34 @@
 
 <section id="veille">
   <div class="section-label">// Veille technologique en direct</div>
-  <div class="veille-slot" id="veille-container">
-    L'embed de la veille apparaîtra ici — voir <code>veille-container</code> dans le code source.
-  </div>
+  <div id="veille-container" class="veille-slot">Chargement de la veille…</div>
 </section>
+
+<script>
+  (function(){
+    var url = "https://ikar-code.github.io/TEST/docs/veille-ia.html?v=" + Date.now();
+    var box = document.getElementById("veille-container");
+    var iframe = document.createElement("iframe");
+    iframe.src = url;
+    iframe.style.width = "100%";
+    iframe.style.border = "none";
+    iframe.style.display = "block";
+    iframe.loading = "lazy";
+    iframe.onload = function(){
+      try {
+        iframe.style.height = iframe.contentDocument.body.scrollHeight + "px";
+        box.classList.remove("veille-slot");
+        box.style.border = "none";
+        box.style.padding = "0";
+      } catch(e) {
+        // cross-origin ou page introuvable : garde une hauteur par défaut
+        iframe.style.height = "600px";
+      }
+    };
+    box.textContent = "";
+    box.appendChild(iframe);
+  })();
+</script>
 
 <section id="contact">
   <div class="section-label">// Contact</div>
