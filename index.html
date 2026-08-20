@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IKOUR — Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
 
+  :root{
+    --bg:#0b0d12;
+    --surface:#12151c;
+    --border:#232733;
+    --text:#e4e7ee;
+    --sub:#8b93a7;
+    --accent:#5eead4;
+    --accent-dim:rgba(94,234,212,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+  }
+  a{color:inherit;text-decoration:none;}
+
+  /* ── Nav ── */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(11,13,18,.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  nav{
+    max-width:960px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;
+  }
+  .logo{
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;font-size:15px;letter-spacing:.5px;
+    color:var(--accent);
+  }
+  .logo span{color:var(--sub);}
+  .navlinks{display:flex;gap:28px;font-size:13px;color:var(--sub);}
+  .navlinks a:hover{color:var(--text);}
+
+  /* ── Hero ── */
+  .hero{
+    max-width:960px;margin:0 auto;
+    padding:100px 24px 80px;
+  }
+  .hero-eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;color:var(--accent);
+    letter-spacing:2px;text-transform:uppercase;
+    margin-bottom:18px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);
+       box-shadow:0 0 8px var(--accent);}
+  .hero h1{
+    font-size:44px;font-weight:700;line-height:1.15;
+    letter-spacing:-1px;margin-bottom:20px;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--accent);
+  }
+  .hero p{
+    font-size:16px;color:var(--sub);max-width:520px;margin-bottom:32px;
+  }
+  .hero-links{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    font-family:'JetBrains Mono',monospace;font-size:13px;
+    padding:10px 18px;border-radius:8px;border:1px solid var(--border);
+    transition:all .15s;
+  }
+  .btn-primary{background:var(--accent);color:#0b0d12;font-weight:700;border-color:var(--accent);}
+  .btn-primary:hover{opacity:.85;}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+  /* ── Sections ── */
+  section{max-width:960px;margin:0 auto;padding:60px 24px;}
+  .section-label{
+    font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--sub);
+    text-transform:uppercase;letter-spacing:2px;margin-bottom:24px;
+    border-bottom:1px solid var(--border);padding-bottom:10px;
+  }
+
+  /* ── Projects grid ── */
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+  .card{
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    padding:22px;transition:border-color .15s, transform .15s;
+  }
+  .card:hover{border-color:var(--accent);transform:translateY(-2px);}
+  .card-title{font-weight:600;font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+  .card-tag{
+    font-family:'JetBrains Mono',monospace;font-size:10px;
+    background:var(--accent-dim);color:var(--accent);
+    padding:2px 8px;border-radius:20px;
+  }
+  .card p{font-size:13px;color:var(--sub);}
+
+  /* ── Veille embed slot ── */
+  .veille-slot{
+    background:var(--surface);border:1px dashed var(--border);border-radius:12px;
+    padding:32px;text-align:center;color:var(--sub);font-size:13px;
+  }
+  .veille-slot code{
+    font-family:'JetBrains Mono',monospace;color:var(--accent);
+    background:var(--accent-dim);padding:2px 6px;border-radius:4px;
+  }
+
+  /* ── Footer ── */
+  footer{
+    border-top:1px solid var(--border);
+    padding:32px 24px;text-align:center;
+    font-size:12px;color:var(--sub);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">IKOUR<span>.dev</span></div>
+    <div class="navlinks">
+      <a href="#projets">Projets</a>
+      <a href="#veille">Veille</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-eyebrow"><span class="dot"></span> Disponible pour des projets</div>
+  <h1>Lucas — <em>infra & IA</em>,<br>construites de zéro.</h1>
+  <p>Étudiant BTS SIO. Je conçois des systèmes auto-hébergés et des plateformes propulsées par l'IA — de la simulation de marché à la veille technologique automatisée.</p>
+  <div class="hero-links">
+    <a class="btn btn-primary" href="#projets">Voir les projets</a>
+    <a class="btn btn-ghost" href="https://github.com/Ikar-code" target="_blank">GitHub ↗</a>
+  </div>
+</section>
+
+<section id="projets">
+  <div class="section-label">// Projets</div>
+  <div class="projects">
+    <div class="card">
+      <div class="card-title">Le Capital du Lord <span class="card-tag">IA</span></div>
+      <p>Simulation de marché crypto avec des agents de trading pilotés par IA.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Le Fil du Lord <span class="card-tag">Multi-agent</span></div>
+      <p>Média d'actualité française automatisé, pipeline multi-agents IA.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Radar <span class="card-tag">Backend</span></div>
+      <p>Outil de veille concurrentielle avec un backend multi-agents.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">RIKA <span class="card-tag">Local</span></div>
+      <p>Assistant IA personnel, en transition vers une stack 100 % locale.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Veille IA <span class="card-tag">Streamlit</span></div>
+      <p>Plateforme de veille technologique automatisée, stockage Supabase.</p>
+    </div>
+  </div>
+</section>
+
+<section id="veille">
+  <div class="section-label">// Veille technologique en direct</div>
+  <div class="veille-slot" id="veille-container">
+    L'embed de la veille apparaîtra ici — voir <code>veille-container</code> dans le code source.
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label">// Contact</div>
+  <p style="color:var(--sub);font-size:14px;">
+    Envie d'échanger sur un projet ? Écris-moi sur
+    <a href="https://github.com/Ikar-code" target="_blank" style="color:var(--accent);">GitHub</a>.
+  </p>
+</section>
+
+<footer>
+  © <span id="year"></span> Lucas — IKOUR. Construit à la main, hébergé partout.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
