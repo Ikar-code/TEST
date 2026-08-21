@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Fri, 21 Aug 2026 06:42:38 +0000</lastBuildDate>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+  <item>
+    <title>L'IA générative s'impose progressivement dans la cybersécurité IoT</title>
+    <link>https://www.objetconnecte.com/lia-generative-simpose-progressivement-dans-la-cybersecurite-iot/</link>
+    <description>L’intelligence artificielle générative révolutionne la cybersécurité des objets connectés en 2026. Alors que les réseaux IoT se déploient à grande échelle dans différents secteurs, les méthodes traditionnelles peinent à contrer des cybermenaces toujours plus sophistiquées. Les entreprises s’appuient désormais sur l’IA générative pour renforcer la détection et la réaction face aux risques, malgré les défis liés à l’utilisation de ces technologies avancées.</description>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+    <guid isPermaLink="true">https://www.objetconnecte.com/lia-generative-simpose-progressivement-dans-la-cybersecurite-iot/</guid>
+  </item>
+  <item>
+    <title>Cybersécurité en entreprise et IoT</title>
+    <link>https://www.sfrbusiness.fr/room/cybersecurite-en-entreprise/cybersecurite-et-iot/</link>
+    <description>Les bénéfices des objets connectés pour l’entreprise
+
+Ils sont considérables :
+
+une augmentation de la productivité,
+
+une réduction des coûts opérationnels,
+
+une amélioration de la prise de décision grâce aux données en temps réel,
+
+la création de nouveaux modèles économiques basés sur les services. Le cabinet de conseil McKinsey estime que l'IoT pourrait générer jusqu'à 12,5 trillions (soient 12500 milliards !) de dollars de valeur économique mondiale d'ici 2030. Mais à mesure que les objets connectés se multiplient, les entreprises doivent aussi garder la maîtrise d’un ensemble technique souvent hétérogène, réparti entre plusieurs équipes et parfois dépendant de composants tiers.</description>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+    <guid isPermaLink="true">https://www.sfrbusiness.fr/room/cybersecurite-en-entreprise/cybersecurite-et-iot/</guid>
+  </item>
+  <item>
+    <title>Cybersécurité préemptive : l'IA qui bloque les cyberattaques avant qu ...</title>
+    <link>https://www.iana-data.org/articles/cybersecurite-preemptive-ia-2026/</link>
+    <description>Image illustrative : bouclier numérique stylisé avec courbes de détection prédictive
+
+Et si votre entreprise pouvait bloquer une cyberattaque… avant qu’elle ne commence ? Résumé La cybersécurité préemptive utilise l’intelligence artificielle et le machine learning pour anticiper, détecter et neutraliser les cyberattaques en temps réel, avant même qu’elles ne causent des dégâts. Face à une hausse de 38 % des cyberattaques en 2025 et un coût moyen de 4,5 millions de dollars par incident, Gartner a classé la cybersécurité préemptive comme tendance majeure pour 2026.</description>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+    <guid isPermaLink="true">https://www.iana-data.org/articles/cybersecurite-preemptive-ia-2026/</guid>
+  </item>
+  <item>
+    <title>IA et cybersécurité : comment l'intelligence artificielle renforce (et ...</title>
+    <link>https://www.seewideconsulting.com/blog/ia-cybersecurite-intelligence-artificielle-securite</link>
+    <description>La cybersécurité vit une transformation sans précédent. D'un côté, les équipes de sécurité adoptent massivement l'intelligence artificielle pour détecter les menaces plus vite, analyser des volumes de logs impossibles à traiter manuellement, et automatiser la réponse aux incidents. De l'autre, les attaquants utilisent les mêmes outils pour lancer des campagnes de phishing plus convaincantes, générer des malwares polymorphes et contourner les défenses traditionnelles.</description>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+    <guid isPermaLink="true">https://www.seewideconsulting.com/blog/ia-cybersecurite-intelligence-artificielle-securite</guid>
+  </item>
+  <item>
+    <title>Comment l'IA transforme les cyberattaques en 2026 - Data-Expert</title>
+    <link>https://data-expert.fr/ia-cybersecurite-offensive-2026/</link>
+    <description>L’essentiel à retenir : en 2026, l’IA offensive bascule vers le pentest agentique, capable d’automatiser l’exploitation complexe via des architectures multi-agents. Cette technologie réduit les délais de reconnaissance et personnalise les attaques, comme le phishing généré à 82,6 % par l’IA. Adoptez une défense proactive et des structures Zero-Trust pour contrer ces menaces autonomes et garantir votre résilience opérationnelle.</description>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+    <guid isPermaLink="true">https://data-expert.fr/ia-cybersecurite-offensive-2026/</guid>
+  </item>
+  <item>
+    <title>Air Traffic Control Using Large Language Models: Prompt Engineering, Architecture, and Evaluation</title>
+    <link>https://arxiv.org/abs/2608.19299</link>
+    <description>arXiv:2608.19299v1 Announce Type: new 
+Abstract: Air traffic control (ATC) communication is a safety-critical dialogue that remains largely human-driven even as other parts of air traffic management have been semi-automated. In this article, we experimentally evaluate whether large language models (LLMs) can generate operationally realistic ATC transmissions. An experimental general-aviation flight flying over the San Francisco "Bay Tour" route is hand-transcribed and used as ground truth (P0).</description>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.19299</guid>
+  </item>
+  <item>
+    <title>Interaction valence reveals contrasting social networks in dairy cattle</title>
+    <link>https://arxiv.org/abs/2608.19222</link>
+    <description>arXiv:2608.19222v1 Announce Type: new 
+Abstract: Social relationships shape access to resources, exposure to conflict and group stability, yet automated livestock monitoring typically treats behaviour as isolated events. Here, we present a valence-aware social-network framework that transforms video-derived interactions into herd-level representations of affiliative and agonistic organization. A pose-based computer-vision pipeline analysed 7 h 39 min of continuous video from the pre-milking area of one commercial dairy farm.</description>
+    <pubDate>Fri, 21 Aug 2026 06:42:38 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.19222</guid>
+  </item>
+  </channel>
+</rss>
