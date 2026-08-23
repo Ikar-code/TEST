@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Sun, 23 Aug 2026 06:37:35 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Aug 2026 06:37:35 +0000</pubDate>
+  <item>
+    <title>Cybersécurité : les 5 atouts de l'IA - Blog</title>
+    <link>https://gcc.globalsign.com/au/signon/gacp/usernamePasswordLogin.do</link>
+    <description>December 23, 2022 - Technical Support Center GlobalSign Home · Ordering Certificates from GlobalSign is Quick &amp; Easy · Copyright © 2007-2026 GlobalSign All Rights Reserved</description>
+    <pubDate>Sun, 23 Aug 2026 06:37:35 +0000</pubDate>
+    <guid isPermaLink="true">https://gcc.globalsign.com/au/signon/gacp/usernamePasswordLogin.do</guid>
+  </item>
+  <item>
+    <title>GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure</title>
+    <link>https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html</link>
+    <description>A newly disclosed security flaw in GitLab has come under active exploitation within days of public disclosure, according to watchTowr. The vulnerability in question is CVE-2026-19478 (CVSS score: 9.4), a case of code injection that allows an unauthenticated attacker to modify or delete publicly accessible GitLab projects and rewrite their data under certain conditions without requiring credentials, user interaction, or obscure configuration. The following versions of GitLab Community Edition (CE) and Enterprise Edition (EE) are affected by the flaw -
+
+18.2 before 18.11.11
+
+19.0 before 19.0.8
+
+19.1 before 19.1.6
+
+19.2 before 19.2.4
+
+In an alert released earlier this week, GitLab said the issue could be exploited via a GraphQL directive.</description>
+    <pubDate>Sun, 23 Aug 2026 06:37:35 +0000</pubDate>
+    <guid isPermaLink="true">https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html</guid>
+  </item>
+  </channel>
+</rss>
