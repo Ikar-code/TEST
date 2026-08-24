@@ -174,31 +174,83 @@
 <section id="veille">
   <div class="section-label">// Veille technologique en direct</div>
   <div id="veille-container" class="veille-slot">Chargement de la veille…</div>
+  <div style="text-align:center;margin-top:8px;">
+    <a href="#" id="veille-secours-lien" style="font-size:11px;color:var(--sub);text-decoration:underline;">🛟 Voir la dernière veille connue (RSS)</a>
+  </div>
 </section>
 
 <script>
   (function(){
-    var url = "https://ikar-code.github.io/TEST/docs/veille-ia.html?v=" + Date.now();
+    var VEILLE_URL = "https://ikar-code.github.io/TEST/docs/veille-ia.html";
+    var GH_OWNER   = "Ikar-code";
+    var GH_REPO    = "TEST";
+    var RSS_PATH   = "rss";
+
     var box = document.getElementById("veille-container");
+
+    function afficherRSS(motif){
+      box.innerHTML = '<div style="padding:16px;font-size:12px;color:var(--yel);">⚠️ ' + motif + ' — chargement du flux RSS de secours…</div>';
+      fetch("https://api.github.com/repos/" + GH_OWNER + "/" + GH_REPO + "/contents/" + RSS_PATH)
+        .then(function(r){ return r.json(); })
+        .then(function(fichiers){
+          if (!Array.isArray(fichiers) || !fichiers.length) throw new Error("no-rss");
+          fichiers.sort(function(a,b){ return b.name.localeCompare(a.name); });
+          return fetch(fichiers[0].download_url);
+        })
+        .then(function(r){ return r.text(); })
+        .then(function(xmlTexte){
+          var xml   = new DOMParser().parseFromString(xmlTexte, "text/xml");
+          var items = xml.querySelectorAll("item");
+          var html  = '<div style="padding:16px;">' +
+                      '<div style="font-size:11px;color:var(--yel);margin-bottom:12px;">⚠️ Site principal indisponible — dernière veille connue (RSS)</div>';
+          items.forEach(function(item){
+            var t = item.querySelector("title");
+            var l = item.querySelector("link");
+            html += '<div style="margin-bottom:8px;padding:8px 10px;border-left:2px solid var(--border);">' +
+                    '<a href="' + (l ? l.textContent : "#") + '" target="_blank" style="color:var(--accent);font-size:13px;text-decoration:none;">' +
+                    (t ? t.textContent : "Sans titre") + '</a></div>';
+          });
+          html += '</div>';
+          box.innerHTML = html;
+        })
+        .catch(function(){
+          box.innerHTML = '<div style="padding:16px;color:#f38ba8;font-size:12px;">Veille indisponible pour le moment (site et RSS inaccessibles).</div>';
+        });
+    }
+
     var iframe = document.createElement("iframe");
-    iframe.src = url;
+    iframe.src = VEILLE_URL + "?v=" + Date.now();
     iframe.style.width = "100%";
     iframe.style.border = "none";
     iframe.style.display = "block";
     iframe.loading = "lazy";
+
     iframe.onload = function(){
       try {
-        iframe.style.height = iframe.contentDocument.body.scrollHeight + "px";
+        var doc   = iframe.contentDocument;
+        var texte = ((doc.body && doc.body.innerText) || "").toLowerCase();
+        if (texte.indexOf("404") !== -1 || texte.indexOf("there isn't a github pages site here") !== -1) {
+          afficherRSS("Page introuvable (404)");
+          return;
+        }
+        iframe.style.height = doc.body.scrollHeight + "px";
         box.classList.remove("veille-slot");
         box.style.border = "none";
         box.style.padding = "0";
       } catch(e) {
-        // cross-origin ou page introuvable : garde une hauteur par défaut
+        // cross-origin : impossible de lire le contenu, on garde l'iframe telle quelle
         iframe.style.height = "600px";
       }
     };
+    iframe.onerror = function(){ afficherRSS("Page inaccessible"); };
+
     box.textContent = "";
     box.appendChild(iframe);
+
+    document.getElementById("veille-secours-lien").onclick = function(e){
+      e.preventDefault();
+      afficherRSS("Basculé manuellement");
+    };
   })();
 </script>
 
