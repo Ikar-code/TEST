@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Mon, 24 Aug 2026 06:55:03 +0000</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+  <item>
+    <title>STCO: Conditional Neural Operators for Time-Dependent PDEs</title>
+    <link>https://arxiv.org/abs/2608.20477</link>
+    <description>arXiv:2608.20477v1 Announce Type: new 
+Abstract: Neural operators have emerged as efficient surrogates for time-dependent physical systems governed by partial differential equations (PDEs), but their future-state predictions are often conditioned only on observed states and static problem descriptors. For control or optimization, however, body motion, inflow, or forcing are prescribed for the query without being determined solely by the observed state. We introduce the Spatiotemporal Conditional Operator (STCO) for prescribed-condition operator learning (PCOL), a common interface that supplies prescribed target-time condition fields to heterogeneous backbone architectures while retaining their architecture-specific core computation and context pathways.</description>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.20477</guid>
+  </item>
+  <item>
+    <title>A Survey on Foundations and Frontiers of Multimodal Agentic Frameworks: Techniques and Applications</title>
+    <link>https://arxiv.org/abs/2608.20379</link>
+    <description>arXiv:2608.20379v1 Announce Type: new 
+Abstract: Advances in large language models (LLMs) have fueled a wave of research into agency: the ability to reason, plan, and act. This effort has produced agentic frameworks that orchestrate perception, memory, and decision-making around powerful LLM backbones. With the advent of large multimodal models (LMMs), these systems can process and integrate diverse modalities, including images, audio, and video, thereby improving their real-world applicability.</description>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.20379</guid>
+  </item>
+  <item>
+    <title>Terminal Agents: A Survey of AI Agents in Command-Line Environments</title>
+    <link>https://arxiv.org/abs/2608.20485</link>
+    <description>arXiv:2608.20485v1 Announce Type: new 
+Abstract: Large language model agents increasingly act through terminals, yet existing surveys disperse terminal-mediated behavior across software engineering, tool use, and computer-use research. We regard terminal agents as systems whose dominant progress-bearing action--observation loop is mediated by terminal command execution, textual feedback, and stateful environment interaction. Using terminal-mediated execution as an organizing lens, this survey establishes workload-level boundaries and connects system architecture, competence acquisition, and evaluation through a seven-dimensional terminal competence profile.</description>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.20485</guid>
+  </item>
+  <item>
+    <title>Volumetric Radiology AI in the Era of Multimodal Large Language Models</title>
+    <link>https://arxiv.org/abs/2608.20549</link>
+    <description>arXiv:2608.20549v1 Announce Type: new 
+Abstract: Advances in multimodal large language models (MLLMs) are extending radiological artificial intelligence (AI) beyond task-specific image analysis toward multimodal understanding and reasoning. Volumetric radiology, however, presents a fundamental representational mismatch: clinical interpretation often requires full-volume spatial context and acquisition-dependent quantitative information, whereas current MLLMs are commonly conditioned on selected two-dimensional (2D) images, compressed visual representations, or report-derived text. Reliable volumetric radiology AI therefore requires representations that preserve task-relevant three-dimensional (3D) information and systems that can access, verify, and integrate this information across clinical workflows.</description>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.20549</guid>
+  </item>
+  <item>
+    <title>Environmental Slow AI: Design Principles for Generative Systems</title>
+    <link>https://arxiv.org/abs/2608.20398</link>
+    <description>arXiv:2608.20398v1 Announce Type: new 
+Abstract: Generative AI (genAI) systems produce cultural artefacts at scale, but they also reflect embedded cultural values through their design. Once identified, these values become open to deliberate reshaping. This position paper examines the maximalist values of current generative AI through an environmental humanities tradition and proposes design principles in which environmental sustainability serves as the core value instead.</description>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.20398</guid>
+  </item>
+  <item>
+    <title>Flock CEO calls for ‘compromise’ as surveillance company faces growing backlash</title>
+    <link>https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/</link>
+    <description>The country needs to find a “compromise” between privacy and safety, according to Flock Safety CEO Garrett Langley. “When people talk about just one of these, privacy or safety, they’re prioritizing the wrong thing, and what we have to prioritize as a country is compromise,” Langley said during a recent interview with Fox News. “How do we have our safety, and how do we balance privacy?”
+
+Langley’s Fox News appearance was just the latest interview he’s given as the company faces a growing public outcry around concerns that Flock’s surveillance cameras, drones, and license plate recognition technology could be misused.</description>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+    <guid isPermaLink="true">https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/</guid>
+  </item>
+  <item>
+    <title>SDAD: Spec-Driven Agentic Development for the AI-Native SDLC</title>
+    <link>https://arxiv.org/abs/2608.20341</link>
+    <description>arXiv:2608.20341v1 Announce Type: new 
+Abstract: Frontier coding agents backed by large language models with context windows from hundreds of thousands to millions of tokens are restructuring the Software Development Life Cycle (SDLC). Rich context handling and multi-step reasoning now allow substantial Functional Requirement Documents (FRDs) and repository context to be ingested in a single workflow, making specification quality the execution fuel for autonomous delivery. This report formalises Spec-Driven Agentic Development (SDAD) as a synthesis of disciplined up-front formalisation and high-velocity implementation: intent capture, machine-readable specification, agentic synthesis, and independent multi-agent verification under human sign-off.</description>
+    <pubDate>Mon, 24 Aug 2026 06:55:03 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.20341</guid>
+  </item>
+  </channel>
+</rss>
