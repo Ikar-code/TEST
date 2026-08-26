@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Wed, 26 Aug 2026 06:45:12 +0000</lastBuildDate>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+  <item>
+    <title>A survey detection channel overrides the pixels in an astronomical foundation model, and biases tomographic mean redshifts</title>
+    <link>https://arxiv.org/abs/2608.23626</link>
+    <description>arXiv:2608.23626v1 Announce Type: new 
+Abstract: Foundation models for astronomy are trained on survey pixels together with the catalogue products derived from those pixels. Those catalogues are incomplete at a measurable rate, and a model trained on both inherits that incompleteness as a systematic. We audit AION-1, a 39-modality transformer trained on more than 200 million objects, using causal interventions on its inputs.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.23626</guid>
+  </item>
+  <item>
+    <title>5 innovations IA pour renforcer la cybersécurité en 2026 | Brief IA</title>
+    <link>https://www.briefia.fr/blog/innovations-ia-cybersecurite-2026</link>
+    <description>Cybersécurité IA 2026 : 5 innovations clés, avec dates de sortie, benchmarks et gains mesurables pour mieux prioriser vos défenses. L’IA n’est plus seulement un outil d’assistance en cybersécurité : en 2026, elle devient un opérateur actif, capable de détecter, prioriser et parfois corriger des failles à la place des équipes humaines. Plusieurs annonces récentes montrent un basculement net vers l’agentic security, avec des plateformes qui automatisent la chasse aux vulnérabilités, la protection des modèles et la réduction du bruit opérationnel.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://www.briefia.fr/blog/innovations-ia-cybersecurite-2026</guid>
+  </item>
+  <item>
+    <title>Auditing the Synthetic Memoir: Measuring Scene-Level Confabulation in LLM-Generated Autobiography Against the Documented Record of the Life It Describes</title>
+    <link>https://arxiv.org/abs/2608.23640</link>
+    <description>arXiv:2608.23640v1 Announce Type: new 
+Abstract: When a large language model (LLM) is asked to write a person's life, how much of what it writes actually happened? We present a scene-level case-study audit - the first quantified audit of LLM-generated autobiography against a subject-specific ground-truth corpus that we are aware of, based on an unsystematic literature search. We define the verification-failure rate as the share of days not rated VERIFIED (scene positively corroborated): 354 of 366 days fail, 96.7% (Wilson 95% CI 94.4-98.1%).</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.23640</guid>
+  </item>
+  <item>
+    <title>How much of a measured AI preference is the model, and how much is the instrument?</title>
+    <link>https://arxiv.org/abs/2608.23641</link>
+    <description>arXiv:2608.23641v1 Announce Type: new 
+Abstract: Model welfare research infers what a model prefers from the answers returned to prompts written to elicit preferences. (2025), Tagliabue and Dung (2025) and Trhlik et al. (2026) have built four instruments for that purpose, and their findings disagree.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.23641</guid>
+  </item>
+  <item>
+    <title>Serving Masked Diffusion LLMs: Characterization and Design Principles from Real Hardware</title>
+    <link>https://arxiv.org/abs/2608.23807</link>
+    <description>arXiv:2608.23807v1 Announce Type: new 
+Abstract: Masked diffusion language models (dLLMs) can in principle generate text faster than autoregressive (AR) models, since they denoise many tokens at once. Recent systems have begun building serving infrastructure for dLLMs, but none first measure how these models behave under real, concurrent serving load. Serving systems built without this grounding risk carrying over assumptions from AR serving that may not hold for dLLMs.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.23807</guid>
+  </item>
+  <item>
+    <title>MolEmb: Multimodal Large Language Models Can Be Strong Molecular Embedding Models</title>
+    <link>https://arxiv.org/abs/2608.23646</link>
+    <description>arXiv:2608.23646v1 Announce Type: new 
+Abstract: Molecular embedding models can serve as foundational infrastructure for computational chemistry and drug discovery, where reusable vector representations support property prediction, virtual screening, and retrieval. Most molecular encoders are specialist models built around a single molecular view, producing unconditional vectors with no language interface for varying the representation. We ask whether multimodal large language models (MLLMs), which natively process images, text, and symbolic inputs, can instead serve as \emph{general molecular embedding models} that produce embeddings conditioned on both a molecular profile and a natural-language semantic context.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.23646</guid>
+  </item>
+  <item>
+    <title>Gated Activation Steering for Reducing Sycophancy &amp; Hallucination in Medical Question Answering</title>
+    <link>https://arxiv.org/abs/2608.23666</link>
+    <description>arXiv:2608.23666v1 Announce Type: new 
+Abstract: Sycophancy and hallucination are persistent failure modes of Large Language Models (LLMs) across domains. However, it becomes particularly consequential in clinical question answering, where responses must remain grounded in the provided context and robust to user pressure. Hallucination can introduce information that is unsupported by the context, while sycophancy can cause a model to abandon a previously correct answer when challenged by the user.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.23666</guid>
+  </item>
+  <item>
+    <title>Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows</title>
+    <link>https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html</link>
+    <description>Thousands of companies have been affected by the Mirage2FA campaign from 2024 to 2026. The commercial phishing-as-a-service toolkit targets Microsoft 365 accounts by abusing legitimate login flows and bypassing two-factor authentication. According to ANY.RUN research, 48% of targeted email addresses were potentially compromised.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html</guid>
+  </item>
+  <item>
+    <title>ESQ-Bench: A Multi-Tier Enterprise Oracle Benchmark for Evaluating NL2SQL Dialect Generalization and Silent Semantic Divergence</title>
+    <link>https://arxiv.org/abs/2608.23569</link>
+    <description>arXiv:2608.23569v1 Announce Type: new 
+Abstract: State-of-the-art Natural Language to SQL (NL2SQL) models report execution accuracy exceeding 89 percent on established benchmarks such as Spider and BIRD. However, these benchmarks rely on simplified academic schemas and open-source SQL dialects that do not reflect the complexity of enterprise database environments. We introduce ESQ-Bench, an Oracle-first NL2SQL benchmark with systematic complexity tiers and silent-divergence evaluation across three enterprise schema complexity tiers.</description>
+    <pubDate>Wed, 26 Aug 2026 06:45:12 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2608.23569</guid>
+  </item>
+  </channel>
+</rss>
