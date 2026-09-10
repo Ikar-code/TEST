@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Thu, 10 Sep 2026 06:31:41 +0000</lastBuildDate>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+  <item>
+    <title>Beyond "AI Helps Humans": Decision-Targeted Evaluation Design for Human-Agent Teams in the Agentic Era</title>
+    <link>https://arxiv.org/abs/2609.05527</link>
+    <description>arXiv:2609.05527v1 Announce Type: new 
+Abstract: Wherever a coding agent works under engineer supervision, or a clinical model assists a radiologist, the deployment question is whether to keep the hum</description>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.05527</guid>
+  </item>
+  <item>
+    <title>SciLitBench: Benchmark and Design Principles for LLM-Powered Systematic Literature Reviews</title>
+    <link>https://arxiv.org/abs/2609.05505</link>
+    <description>arXiv:2609.05505v1 Announce Type: new 
+Abstract: Systematic reviews require sustained human judgment across thousands of records, yet existing evaluations of large language models (LLMs) typically exa</description>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.05505</guid>
+  </item>
+  <item>
+    <title>Agents Trust Tools Too Much: Measuring Reliance on Unreliable Tools</title>
+    <link>https://arxiv.org/abs/2609.05587</link>
+    <description>arXiv:2609.05587v1 Announce Type: new 
+Abstract: Existing evaluations of tool-using agents primarily measure whether an agent can successfully complete diverse tasks with tools. These evaluations gene</description>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.05587</guid>
+  </item>
+  <item>
+    <title>AutoFyn Technical Report: Non-Parametric Expert Iteration for Long-Horizon Agents</title>
+    <link>https://arxiv.org/abs/2609.05446</link>
+    <description>arXiv:2609.05446v1 Announce Type: new 
+Abstract: We introduce AutoFyn, an agent harness inspired by the Expert Iteration algorithm, adapting a frozen model across many rounds by updating persistent st</description>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.05446</guid>
+  </item>
+  <item>
+    <title>When Does Memory Help? A Cost-Aware Evaluation of Long-Term Memory in Tool-Using LLM Agents</title>
+    <link>https://arxiv.org/abs/2609.05441</link>
+    <description>arXiv:2609.05441v1 Announce Type: new 
+Abstract: Long-term memory for LLM agents is evaluated today by conversational recall benchmarks (LoCoMo, LongMemEval), which measure question answering over dia</description>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.05441</guid>
+  </item>
+  <item>
+    <title>ARC-Bench: Closed-Loop Replanning Masks Broken Action Ranking in Frozen JEPA World Models</title>
+    <link>https://arxiv.org/abs/2609.05461</link>
+    <description>arXiv:2609.05461v1 Announce Type: new 
+Abstract: Reward-free latent world models plan by scoring candidate actions with distances in a frozen latent space: an action is preferred if its predicted futu</description>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.05461</guid>
+  </item>
+  <item>
+    <title>PGP-Clinical-TimeKAN: Prior-Guided Joint Probabilistic Forecasting of Clinical Trajectories</title>
+    <link>https://arxiv.org/abs/2609.05488</link>
+    <description>arXiv:2609.05488v1 Announce Type: new 
+Abstract: Clinical deterioration unfolds through coupled, partially observed trajectories, not a single diagnostic label. We introduce PGP-Clinical-TimeKAN, a tr</description>
+    <pubDate>Thu, 10 Sep 2026 06:31:41 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.05488</guid>
+  </item>
+  </channel>
+</rss>
