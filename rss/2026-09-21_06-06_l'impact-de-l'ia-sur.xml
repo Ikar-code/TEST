@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Mon, 21 Sep 2026 06:06:39 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+  <item>
+    <title>Quel est l'impact de l'IA sur la cybersécurité ? - Synetis</title>
+    <link>https://www.synetis.com/blog/quel-est-limpact-de-lia-sur-la-cybersecurite/</link>
+    <description>L’intelligence artificielle impacte nos métiers à une vitesse inédite : elle accélère l’innovation, simplifie les usages et rend la technique accessible au plus grand nombre. De l’empoisonnement des données (Data Poisoning) au Phishing sur-mesure, en passant par les risques du code généré, l’utilisation de l’IA dépasse la simple automatisation de nos usages : elle redéfinit entièrement la surface d’attaque. Pour naviguer dans cette nouvelle ère sans compromettre sa sécurité, une seule clé : adopter une posture éclairée et replacer la vigilance humaine au centre.</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://www.synetis.com/blog/quel-est-limpact-de-lia-sur-la-cybersecurite/</guid>
+  </item>
+  <item>
+    <title>Améliorer sa sécurité IoT grâce à la surveillance de l'IA ?</title>
+    <link>https://www.visiativ.com/actualites/actualites/surveillance-ia-securite-iot/</link>
+    <description>Détection des menaces : le rôle de l’IA
+
+Dans un monde où les dispositifs IoT se multiplient à une vitesse fulgurante, la sécurité devient une préoccupation majeure. Chaque capteur, chaque caméra, chaque appareil connecté constitue une porte d’entrée potentielle pour des attaques. La capacité à détecter et à réagir rapidement aux menaces devient donc cruciale.</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://www.visiativ.com/actualites/actualites/surveillance-ia-securite-iot/</guid>
+  </item>
+  <item>
+    <title>Cybersécurité Industrielle 2026 : Protéger Systèmes OT et IT</title>
+    <link>https://i40pilot.app/a/cybersecurite-industrielle-systemes-ot-it-2026</link>
+    <description>July 13, 2026 - L'IA améliore la détection des intrusions, prédit les vulnérabilités et automatise certaines tâches de réponse, rendant les défenses plus efficaces et adaptatives. Quelles sont les réglementations clés impactant la cybersécurité ...</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://i40pilot.app/a/cybersecurite-industrielle-systemes-ot-it-2026</guid>
+  </item>
+  <item>
+    <title>Clinician-Grounded Quality Assurance for AI-Assisted Psychiatric Intake</title>
+    <link>https://arxiv.org/abs/2609.21149</link>
+    <description>arXiv:2609.21149v1 Announce Type: new 
+Abstract: Before patients can use AI-assisted psychiatric intake systems, health systems need practical ways to routinely evaluate these tools against their clinical standards for quality assurance. Because clinicians may use different intake styles, evaluation for this task must (1) support comparison across interviewing approaches, (2) minimize clinician burden, and (3) measure clinically relevant performance for health systems deploying these technologies. We present a clinician-grounded evaluation platform built around a memory-augmented patient simulator for open-ended AI interviewing, InterviewPlayground.</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.21149</guid>
+  </item>
+  <item>
+    <title>Can Agents Design Better Chips with a Higher Level Abstraction?</title>
+    <link>https://arxiv.org/abs/2609.21157</link>
+    <description>arXiv:2609.21157v1 Announce Type: new 
+Abstract: Large Language Model (LLM) agents are increasingly being explored for chip design, but most existing approaches operate directly at RTL. We ask whether agents can design better chips by leveraging higher-level abstractions. We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement, and combine Agent-based HLS Design with Post-HLS RTL Refinement as Agent-based HLS with RTL Refinement (AHRR).</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.21157</guid>
+  </item>
+  <item>
+    <title>RBS-Attention: Radius-Bounded Sparse Prefill for Long-Context Large Language Models</title>
+    <link>https://arxiv.org/abs/2609.20971</link>
+    <description>arXiv:2609.20971v1 Announce Type: new 
+Abstract: Long-context large language model inference is increasingly limited by prefill, where dense self-attention processes the entire prompt before generation begins. Sparse block selection can reduce this cost, but a block centroid may hide a highly relevant token among many irrelevant ones. We call this failure mode mean dilution and propose RBS-Attention, a training-free sparse-prefill method with two complementary selection branches.</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.20971</guid>
+  </item>
+  <item>
+    <title>SpecOpt: Contact-Diff Reasoning for Agentic Molecule Optimization Toward Binding Specificity</title>
+    <link>https://arxiv.org/abs/2609.21165</link>
+    <description>arXiv:2609.21165v1 Announce Type: new 
+Abstract: Off-target protein binding is a major source of adverse effects for small-molecule drugs, yet most structure-based molecular design methods focus on generating selective compounds de novo rather than improving the selectivity of existing, well- characterized drugs. We introduce specificity optimization (SpecOpt), a molecular design task that seeks constrained structural modifications to an existing compound that increase its binding preference for an intended target over known off-targets while preserving its structural identity and drug-like properties. To enable systematic evaluation, we construct a ChEMBL-derived benchmark from compound-target interaction data, identifying intended targets through curated drug-mechanism annotations and off- targets through measured activities.</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.21165</guid>
+  </item>
+  <item>
+    <title>AI-GRACE: A Use-Case Operationalization Framework for Agentic AI: From Organizational Objectives and Obligations to Deployment Capabilities and Architecture</title>
+    <link>https://arxiv.org/abs/2609.21192</link>
+    <description>arXiv:2609.21192v1 Announce Type: new 
+Abstract: Organizations deploying agentic artificial intelligence must determine more than whether a model is trustworthy; they must establish what to validate, control, and observe for a use case to deliver its intended outcome while meeting applicable obligations. This paper proposes AI-GRACE (Agentic Intelligence-Governance, Risk, Assurance, Controls, and Evidence) as a use-case operationalization framework connecting organizational governance with technical implementation. The proposal draws on professional observations and a purposive synthesis of standards and literature, using design science to frame the method contribution and situational method engineering to guide contextual tailoring and reuse.</description>
+    <pubDate>Mon, 21 Sep 2026 06:06:39 +0000</pubDate>
+    <guid isPermaLink="true">https://arxiv.org/abs/2609.21192</guid>
+  </item>
+  </channel>
+</rss>
