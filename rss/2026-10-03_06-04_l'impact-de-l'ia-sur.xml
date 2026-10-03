@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Sat, 03 Oct 2026 06:04:00 +0000</lastBuildDate>
+    <pubDate>Sat, 03 Oct 2026 06:04:00 +0000</pubDate>
+  <item>
+    <title>EU AI Act 2026 : Guide Complet pour les Entreprises IoT et ...</title>
+    <link>https://wikiot.fr/cybersecurite/conformite/eu-ai-act-2026-iot-conformite-guide-complet</link>
+    <description>En 2026, la réglementation européenne sur l'intelligence artificielle encadre le déploiement de plus de 50 milliards d'équipements connectés et de systèmes autonomes à l'échelle mondiale. Pour l'ensemble des décideurs industriels, ingénieurs et éditeurs de logiciels, appréhender la definition eu ai act s'impose comme une condition préalable indispensable à toute mise sur le marché d'équipements intelligents. L'EU AI Act constitue le tout premier cadre juridique mondial harmonisé visant à réguler le développement, la commercialisation et l'utilisation des systèmes basés sur l'intelligence artificielle selon une approche fondée sur les risques.</description>
+    <pubDate>Sat, 03 Oct 2026 06:04:00 +0000</pubDate>
+    <guid isPermaLink="true">https://wikiot.fr/cybersecurite/conformite/eu-ai-act-2026-iot-conformite-guide-complet</guid>
+  </item>
+  <item>
+    <title>Solutions de cybersécurité basées sur l’intelligence ...</title>
+    <link>https://www.ibm.com/fr-fr/solutions/ai-cybersecurity</link>
+    <description>Les équipes de sécurité d’aujourd’hui sont confrontées à de nombreux défis. Qu’il s’agisse de pirates informatiques chevronnés, d’attaques par ransomware, d’une surface d’attaque en constante expansion, d’une explosion du volume de données ou d’une complexité croissante des infrastructures, ces problèmes entravent leur capacité à protéger les données. Il est également plus difficile de gérer les accès des utilisateurs, mais aussi de détecter rapidement les menaces de sécurité liées à l’IA et d’y répondre.</description>
+    <pubDate>Sat, 03 Oct 2026 06:04:00 +0000</pubDate>
+    <guid isPermaLink="true">https://www.ibm.com/fr-fr/solutions/ai-cybersecurity</guid>
+  </item>
+  <item>
+    <title>Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes</title>
+    <link>https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html</link>
+    <description>Dell has released security updates to address multiple critical security flaws in Dell Container Storage Modules (CSM) that could be exploited by bad actors to take over susceptible systems. The vulnerabilities are listed below -
+
+CVE-2026-63688 (CVSS score: 10.0) - A missing authentication for critical function vulnerability in the csm-authorization-storage gRPC server that an unauthenticated remote attacker could exploit to obtain unauthorized access to storage backend administrator credentials for all registered storage arrays. (CVSS score: 10.0) - A missing authentication for critical function vulnerability in the csm-authorization-storage gRPC server that an unauthenticated remote attacker could exploit to obtain unauthorized access to storage backend administrator credentials for all registered storage arrays.</description>
+    <pubDate>Sat, 03 Oct 2026 06:04:00 +0000</pubDate>
+    <guid isPermaLink="true">https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html</guid>
+  </item>
+  <item>
+    <title>Why CISOs Struggle to Answer the Board's Three Hardest Questions, and How to Fix the Report</title>
+    <link>https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html</link>
+    <description>The security team is pulling exports from the identity provider, the cloud posture tool, the vulnerability scanner, the SIEM and the EDR console. Someone is building a spreadsheet to reconcile them. Someone else is turning that spreadsheet into slides.</description>
+    <pubDate>Sat, 03 Oct 2026 06:04:00 +0000</pubDate>
+    <guid isPermaLink="true">https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html</guid>
+  </item>
+  </channel>
+</rss>
