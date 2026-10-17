@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Sat, 17 Oct 2026 06:34:15 +0000</lastBuildDate>
+    <pubDate>Sat, 17 Oct 2026 06:34:15 +0000</pubDate>
+  <item>
+    <title>Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early</title>
+    <link>https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html</link>
+    <description>Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258 public sandbox analyses to fake AI campaigns between April and October of 2026. The campaigns also increase operational pressure on MSSPs serving US businesses, which accounted for 16% of country-attributed targets.</description>
+    <pubDate>Sat, 17 Oct 2026 06:34:15 +0000</pubDate>
+    <guid isPermaLink="true">https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html</guid>
+  </item>
+  <item>
+    <title>Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps</title>
+    <link>https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/</link>
+    <description>Amazon is placing its bets on ambient computing, not apps, as the future of personal AI. Alongside the launch of the company’s new AI wearables from Bee, Panos Panay, who serves as Amazon’s SVP of Devices, Alexa &amp; Leo, took the stage at TechCrunch Disrupt on Thursday to talk more in depth about where he sees personal computing headed. “A lot of times, what you’re doing right now — what we all do right now — is we have to remember what we’re asking our tool to do for us,” Panay began, explaining that this is how we engage with our modern smartphones.</description>
+    <pubDate>Sat, 17 Oct 2026 06:34:15 +0000</pubDate>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/</guid>
+  </item>
+  </channel>
+</rss>
