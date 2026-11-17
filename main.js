@@ -25,6 +25,8 @@
     lenis = new Lenis({ duration: 1.15, smoothWheel: true });
     lenis.on('scroll', (e) => onScroll(e.scroll));
     (function raf(time) { lenis.raf(time); requestAnimationFrame(raf); })(0);
+    // Le scroll reste bloqué pendant l'intro
+    if (document.documentElement.classList.contains('is-loading')) lenis.stop();
   } else {
     window.addEventListener('scroll', () => onScroll(window.scrollY), { passive: true });
   }
@@ -97,6 +99,8 @@
   type();
 
   /* ── 5. ANIME.JS : entrée du hero ───────────────────────── */
+  // Lancée à la fin de l'intro (voir section 10)
+  function playHero() {
   if (window.anime && !reduced) {
     anime.timeline({ easing: 'easeOutExpo' })
       .add({ targets: '.hero-badge', opacity: [0, 1], translateY: [24, 0], duration: 900 })
@@ -105,6 +109,7 @@
       .add({ targets: ['.hero-actions', '.hero-socials'], opacity: [0, 1], translateY: [24, 0], duration: 900, delay: anime.stagger(120) }, '-=700');
   } else {
     document.querySelectorAll('.a-hero').forEach((el) => (el.style.opacity = 1));
+  }
   }
 
   /* ── 6. ANIME.JS : révélation au scroll ─────────────────── */
@@ -209,6 +214,61 @@
       '&body=' + encodeURIComponent(body);
     form.reset();
   });
+
+  /* ── 10. INTRO : préchargeur façon lenis.dev ────────────── */
+  // Gros titre qui monte lettre par lettre, compteur 000 → 100,
+  // puis le rideau se lève et révèle le hero.
+  const pre = document.getElementById('preloader');
+  const root = document.documentElement;
+
+  function endIntro() {
+    root.classList.remove('is-loading');
+    if (pre) pre.remove();
+    if (lenis) lenis.start();
+  }
+
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+
+  if (!pre || !window.anime || reduced) {
+    endIntro();
+    playHero();
+  } else {
+    const title = document.getElementById('pre-title');
+    title.innerHTML = [...title.dataset.text]
+      .map((c) => (c === ' ' ? '<span class="ch sp">&nbsp;</span>' : '<span class="ch"><span>' + c + '</span></span>'))
+      .join('');
+    const chars = title.querySelectorAll('.ch:not(.sp) > span');
+    const countEl = document.getElementById('pre-count');
+    const barEl = document.getElementById('pre-bar');
+    const counter = { v: 0 };
+
+    // On attend la fin du chargement de la page (6 s max)
+    const pageLoaded = document.readyState === 'complete'
+      ? Promise.resolve()
+      : new Promise((r) => window.addEventListener('load', r, { once: true }));
+    const safe = Promise.race([pageLoaded, new Promise((r) => setTimeout(r, 6000))]);
+
+    anime({ targets: chars, translateY: ['110%', '0%'], duration: 1100, delay: anime.stagger(55, { start: 200 }), easing: 'easeOutExpo' });
+
+    const counting = anime({
+      targets: counter, v: 100, duration: 2400, easing: 'easeInOutQuart',
+      update: () => {
+        countEl.textContent = String(Math.round(counter.v)).padStart(3, '0');
+        barEl.style.transform = 'scaleX(' + counter.v / 100 + ')';
+      }
+    }).finished;
+
+    Promise.all([counting, safe]).then(() => {
+      // Le hero démarre pendant que le rideau monte
+      setTimeout(playHero, 1000);
+      anime.timeline({ easing: 'easeInOutExpo' })
+        .add({ targets: chars, translateY: ['0%', '-110%'], duration: 750, delay: anime.stagger(30) })
+        .add({ targets: ['.pre-top', '.pre-bottom', '.pre-bar'], opacity: [1, 0], duration: 400, easing: 'linear' }, '-=650')
+        .add({ targets: pre, translateY: ['0%', '-100%'], duration: 1100 }, '-=250')
+        .finished.then(endIntro);
+    });
+  }
 
   // Nettoyage Vanta si la page est quittée
   window.addEventListener('beforeunload', () => { if (vanta) vanta.destroy(); });
