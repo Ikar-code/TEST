@@ -57,7 +57,7 @@
         minWidth: 200,
         scale: 1.0,
         scaleMobile: 1.0,
-        color: 0xa78bfa,
+        color: 0xff9aa2,
         backgroundColor: 0x07070d,
         points: isMobile ? 7 : 11,
         maxDistance: isMobile ? 18 : 22,
@@ -217,9 +217,9 @@
 
   /* ── 10. INTRO façon lenis.dev ──────────────────────────────
      1) écran de couleur unie
-     2) les lettres L-U-C-A-S apparaissent en grand (3 + 2)
-     3) elles voyagent (FLIP) vers leur place dans le titre du hero
-        pendant que le fond uni se retire par le bas
+     2) les 5 lettres apparaissent EN MÊME TEMPS, déjà dans l'ordre (zigzag haut/bas)
+     3) elles glissent à la verticale pour s'aligner sur le titre du hero
+        pendant que le fond rose se retire par le bas
      ----------------------------------------------------------- */
   const intro = document.getElementById('intro');
   const root = document.documentElement;
@@ -228,6 +228,7 @@
   function endIntro() {
     root.classList.remove('is-loading');
     if (intro) intro.remove();
+    window.dispatchEvent(new Event('resize'));
     if (lenis) lenis.start();
   }
 
@@ -254,47 +255,100 @@
     const pageReady = Promise.race([pageLoaded, new Promise((r) => setTimeout(r, 5000))]);
 
     Promise.all([fontReady, pageReady]).then(() => {
-      // 2) Apparition des lettres (après ~0,6 s de couleur unie)
+      // 2) Les 5 lettres arrivent toutes ensemble, déjà dans l'ordre (L U C A S en zigzag)
       anime({
         targets: wrappers,
         opacity: [0, 1],
-        translateY: [90, 0],
-        scale: [0.88, 1],
+        translateY: [80, 0],
         duration: 1000,
-        delay: anime.stagger(130, { start: 600 }),
+        delay: 500,
         easing: 'easeOutExpo'
-      }).finished.then(() => setTimeout(fly, 450));
+      }).finished.then(() => setTimeout(fly, 700));
     });
 
-    // 3) Les lettres rejoignent le titre, le fond se retire
+    // 3) Les lettres glissent (vers le haut / vers le bas) pour s'aligner sur le titre,
+    //    pendant que le fond rose se retire et que la couleur s'inverse.
     function fly() {
       const to = heroLetters.map((l) => l.getBoundingClientRect());
       const from = glyphs.map((g) => g.getBoundingClientRect());
-      glyphs.forEach((g) => (g.style.transformOrigin = '0 0'));
 
       const flight = anime({
         targets: glyphs,
         translateX: (el, i) => to[i].left - from[i].left,
         translateY: (el, i) => to[i].top - from[i].top,
-        scale: (el, i) => to[i].height / from[i].height,
-        duration: 1500,
-        delay: anime.stagger(70),
+        duration: 1400,
         easing: 'easeInOutExpo'
       });
 
       const wipe = { v: 0 };
       anime({
-        targets: wipe, v: 100, duration: 1300, delay: 250, easing: 'easeInOutQuart',
+        targets: wipe, v: 100, duration: 1300, delay: 150, easing: 'easeInOutQuart',
         update: () => { bg.style.clipPath = 'inset(0 0 ' + wipe.v + '% 0)'; }
       });
 
-      setTimeout(playHero, 1100);
+      setTimeout(playHero, 1000);
 
       flight.finished.then(() => {
         heroLetters.forEach((l) => (l.style.opacity = 1)); // le vrai titre prend le relais
         requestAnimationFrame(endIntro);
       });
     }
+  }
+
+  /* ── 11. PROJETS : défilé horizontal ─────────────────────────
+     Desktop : la section s'épingle, le scroll vertical (Lenis) fait
+     défiler les cartes horizontalement.
+     Mobile / tactile / animations réduites : carrousel natif (swipe). */
+  const hs = document.getElementById('hscroll');
+  if (hs) {
+    const track = document.getElementById('hscroll-track');
+    const bar = document.getElementById('hs-bar');
+    const count = document.getElementById('hs-count');
+    const hint = document.getElementById('hs-hint');
+    const nCards = track.querySelectorAll('.project-card').length;
+    const SPEED = 1.15; // > 1 = défilé un peu plus lent
+    let pinned = false, travel = 0;
+    const pad = (n) => String(n).padStart(2, '0');
+
+    function setUI(p) {
+      bar.style.transform = 'scaleX(' + Math.max(p, 0.04) + ')';
+      count.textContent = pad(Math.round(p * (nCards - 1)) + 1) + ' / ' + pad(nCards);
+    }
+
+    function update() {
+      if (pinned) {
+        const r = hs.getBoundingClientRect();
+        const max = hs.offsetHeight - window.innerHeight;
+        const p = max > 0 ? Math.min(Math.max(-r.top / max, 0), 1) : 0;
+        track.style.transform = 'translate3d(' + (-p * travel) + 'px,0,0)';
+        setUI(p);
+      } else {
+        const max = track.scrollWidth - track.clientWidth;
+        setUI(max > 0 ? track.scrollLeft / max : 0);
+      }
+    }
+
+    function measure() {
+      pinned = !reduced && !isTouch && window.innerWidth >= 900 && window.innerHeight >= 640;
+      hs.classList.toggle('hs-pinned', pinned);
+      track.style.transform = '';
+      if (pinned) {
+        travel = Math.max(track.scrollWidth - hs.clientWidth, 0);
+        hs.style.height = (travel * SPEED + window.innerHeight) + 'px';
+        hint.textContent = 'Faites défiler ↓';
+      } else {
+        hs.style.height = '';
+        hint.textContent = 'Glissez →';
+      }
+      update();
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    track.addEventListener('scroll', () => { if (!pinned) update(); }, { passive: true });
+    window.addEventListener('resize', measure);
+    window.addEventListener('load', measure);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+    measure();
   }
 
   // Nettoyage Vanta si la page est quittée
