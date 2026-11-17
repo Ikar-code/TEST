@@ -57,7 +57,7 @@
         minWidth: 200,
         scale: 1.0,
         scaleMobile: 1.0,
-        color: 0xff9aa2,
+        color: 0x38bdf8,
         backgroundColor: 0x07070d,
         points: isMobile ? 7 : 11,
         maxDistance: isMobile ? 18 : 22,
