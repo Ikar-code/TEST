@@ -13,8 +13,28 @@
   <!-- Lenis (scroll fluide) : CSS recommandé -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Intro : bloque le scroll pendant le préchargeur (filet de sécurité à 9 s) -->
+  <script>
+    document.documentElement.classList.add('is-loading');
+    setTimeout(function () { document.documentElement.classList.remove('is-loading'); }, 9000);
+  </script>
 </head>
 <body>
+
+<!-- INTRO / PRÉCHARGEUR -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-top">
+    <span>Portfolio</span>
+    <span>La Réunion — 2026</span>
+  </div>
+  <h2 class="pre-title" id="pre-title" data-text="Lucas Rajany"></h2>
+  <div class="pre-bottom">
+    <span class="pre-role">BTS SIO SLAM · Développeur en formation</span>
+    <span class="pre-count"><span id="pre-count">000</span><small>%</small></span>
+  </div>
+  <div class="pre-bar"><i id="pre-bar"></i></div>
+</div>
 
 <div class="scroll-progress" id="scroll-progress"></div>
 <div class="cursor-glow" id="cursor-glow"></div>
@@ -76,7 +96,7 @@
   </div>
   <div class="hero-scroll">
     <div class="scroll-line"></div>
-    scroll
+    <span>scroll<br>to explore</span>
   </div>
 </section>
 
