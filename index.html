@@ -12,7 +12,7 @@
 
   <!-- Lenis (scroll fluide) : CSS recommandé -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css" />
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="portfolio.css" />
 
   <!-- Intro : bloque le scroll pendant le préchargeur (filet de sécurité à 9 s) -->
   <script>
@@ -254,74 +254,57 @@
     <div class="hscroll-sticky">
       <div class="hscroll-track" id="hscroll-track">
 
-    <article class="project-card tilt">
-      <div class="project-thumb">📰</div>
-      <div class="project-body">
-        <div class="project-tags">
-          <span class="project-tag project-type-perso">Projet personnel</span>
-          <span class="project-tag">Node.js</span><span class="project-tag">React</span><span class="project-tag">TypeScript</span><span class="project-tag">Groq API</span><span class="project-tag">Gemini API</span><span class="project-tag">Supabase</span><span class="project-tag">GitHub Actions</span>
-        </div>
-        <h3 class="project-title">Le Fil du Lord — Média automatisé par IA</h3>
-        <p class="project-desc">
-          Projet personnel — Système complet de génération d'articles d'actualité automatisé.
-          Le pipeline collecte des informations via scraping et flux RSS, vérifie les faits
-          avec IA, rédige des articles journalistiques, effectue un contrôle qualité puis
-          publie automatiquement le contenu.
-        </p>
-        <div class="project-footer"><a class="project-link primary" href="project/projet3.html">Voir le projet ↗</a></div>
-      </div>
-    </article>
+        <a class="proj" href="project/projet3.html" aria-label="Voir le projet : Le Fil du Lord">
+          <div class="proj-visual" style="--art: radial-gradient(circle at 18% 15%, rgba(255,154,162,.55), transparent 55%), radial-gradient(circle at 90% 95%, rgba(255,201,185,.30), transparent 50%), #1a0f14">
+            <!-- Pour une vraie capture : <img src="img/mon-projet.jpg" alt=""> ici (et retirer l'emoji) -->
+            <span class="proj-emoji" aria-hidden="true">📰</span>
+            <span class="proj-badge">Projet personnel</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </div>
+          <h3 class="proj-title">Le Fil du Lord</h3>
+          <p class="proj-sub">Média automatisé par IA</p>
+          <p class="proj-desc">Système complet de génération d'articles d'actualité automatisé. Le pipeline collecte des informations via scraping et flux RSS, vérifie les faits avec IA, rédige des articles journalistiques, effectue un contrôle qualité puis publie automatiquement le contenu.</p>
+          <div class="proj-tags"><span>Node.js</span><span>React</span><span>TypeScript</span><span>Groq API</span><span>Gemini API</span><span>Supabase</span><span>GitHub Actions</span></div>
+        </a>
 
-    <article class="project-card tilt">
-      <div class="project-thumb">🔍</div>
-      <div class="project-body">
-        <div class="project-tags">
-          <span class="project-tag project-type-perso">Projet personnel</span>
-          <span class="project-tag">Streamlit</span><span class="project-tag">IA</span><span class="project-tag">Supabase</span>
-        </div>
-        <h3 class="project-title">Veille IA — Application de veille automatisée</h3>
-        <p class="project-desc">
-          Application web complète permettant de réaliser des veilles technologiques
-          automatisées dans le domaine de l'intelligence artificielle. L'objectif :
-          supprimer la friction de la veille manuelle.
-        </p>
-        <div class="project-footer"><a class="project-link primary" href="project/veille-ia.html">Voir le projet ↗</a></div>
-      </div>
-    </article>
+        <a class="proj" href="project/veille-ia.html" aria-label="Voir le projet : Veille IA">
+          <div class="proj-visual" style="--art: radial-gradient(circle at 85% 12%, rgba(255,154,162,.50), transparent 55%), radial-gradient(circle at 10% 95%, rgba(255,120,140,.28), transparent 52%), #170d18">
+            <!-- Pour une vraie capture : <img src="img/mon-projet.jpg" alt=""> ici (et retirer l'emoji) -->
+            <span class="proj-emoji" aria-hidden="true">🔍</span>
+            <span class="proj-badge">Projet personnel</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </div>
+          <h3 class="proj-title">Veille IA</h3>
+          <p class="proj-sub">Application de veille automatisée</p>
+          <p class="proj-desc">Application web complète permettant de réaliser des veilles technologiques automatisées dans le domaine de l'intelligence artificielle. L'objectif : supprimer la friction de la veille manuelle.</p>
+          <div class="proj-tags"><span>Streamlit</span><span>IA</span><span>Supabase</span></div>
+        </a>
 
-    <article class="project-card tilt">
-      <div class="project-thumb">📚</div>
-      <div class="project-body">
-        <div class="project-tags">
-          <span class="project-tag project-type-scolaire">Projet scolaire</span>
-          <span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">PHP</span><span class="project-tag">MySQL</span>
-        </div>
-        <h3 class="project-title">Application — Projets scolaires BTS SIO</h3>
-        <p class="project-desc">
-          Application web simple permettant de gérer des données (ajout, modification,
-          suppression). Développée dans le cadre du BTS SIO pour maîtriser les bases du
-          développement back-end et de la gestion de base de données.
-        </p>
-        <div class="project-footer"><a class="project-link primary" href="project/projets-scolaires.html">Voir le projet ↗</a></div>
-      </div>
-    </article>
+        <a class="proj" href="project/projets-scolaires.html" aria-label="Voir le projet : Projets scolaires BTS SIO">
+          <div class="proj-visual" style="--art: radial-gradient(circle at 50% 0%, rgba(255,201,185,.45), transparent 58%), radial-gradient(circle at 5% 100%, rgba(255,154,162,.32), transparent 50%), #1b1012">
+            <!-- Pour une vraie capture : <img src="img/mon-projet.jpg" alt=""> ici (et retirer l'emoji) -->
+            <span class="proj-emoji" aria-hidden="true">📚</span>
+            <span class="proj-badge">Projet scolaire</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </div>
+          <h3 class="proj-title">Projets scolaires BTS SIO</h3>
+          <p class="proj-sub">Application</p>
+          <p class="proj-desc">Application web simple permettant de gérer des données (ajout, modification, suppression). Développée dans le cadre du BTS SIO pour maîtriser les bases du développement back-end et de la gestion de base de données.</p>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span></div>
+        </a>
 
-    <article class="project-card tilt">
-      <div class="project-thumb">🛠️</div>
-      <div class="project-body">
-        <div class="project-tags">
-          <span class="project-tag project-type-stage">Projet de stage</span>
-          <span class="project-tag">Forgejo</span><span class="project-tag">Ansible</span><span class="project-tag">Postfix</span><span class="project-tag">SysAdmin</span>
-        </div>
-        <h3 class="project-title">Forgejo — Forge Git auto-hébergée &amp; Sécurisée</h3>
-        <p class="project-desc">
-          Projet de stage — Installation et mise en service de Forgejo sur une machine
-          virtuelle Ubuntu pour l'entreprise. Création des comptes utilisateurs,
-          configuration des alertes par email et vérification de la sécurité des fichiers.
-        </p>
-        <div class="project-footer"><a class="project-link primary" href="project/forgejo.html">Voir le projet ↗</a></div>
-      </div>
-    </article>
+        <a class="proj" href="project/forgejo.html" aria-label="Voir le projet : Forgejo">
+          <div class="proj-visual" style="--art: radial-gradient(circle at 15% 85%, rgba(255,154,162,.50), transparent 55%), radial-gradient(circle at 92% 10%, rgba(255,201,185,.30), transparent 48%), #150e16">
+            <!-- Pour une vraie capture : <img src="img/mon-projet.jpg" alt=""> ici (et retirer l'emoji) -->
+            <span class="proj-emoji" aria-hidden="true">🛠️</span>
+            <span class="proj-badge">Projet de stage</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </div>
+          <h3 class="proj-title">Forgejo</h3>
+          <p class="proj-sub">Forge Git auto-hébergée &amp; sécurisée</p>
+          <p class="proj-desc">Installation et mise en service de Forgejo sur une machine virtuelle Ubuntu pour l'entreprise. Création des comptes utilisateurs, configuration des alertes par email et vérification de la sécurité des fichiers.</p>
+          <div class="proj-tags"><span>Forgejo</span><span>Ansible</span><span>Postfix</span><span>SysAdmin</span></div>
+        </a>
 
       </div>
       <div class="hscroll-ui">
@@ -533,6 +516,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-<script src="main.js?v=2"></script>
+<script src="portfolio.js"></script>
 </body>
 </html>
