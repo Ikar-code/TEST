@@ -99,17 +99,17 @@
   type();
 
   /* ── 5. ANIME.JS : entrée du hero ───────────────────────── */
-  // Lancée à la fin de l'intro (voir section 10)
+  // Lancée pendant la fin de l'intro (voir section 10)
   function playHero() {
-  if (window.anime && !reduced) {
-    anime.timeline({ easing: 'easeOutExpo' })
-      .add({ targets: '.hero-badge', opacity: [0, 1], translateY: [24, 0], duration: 900 })
-      .add({ targets: '.hero-name .line', opacity: [0, 1], translateY: [60, 0], rotateX: [-40, 0], duration: 1100, delay: anime.stagger(140) }, '-=600')
-      .add({ targets: ['.hero-role', '.hero-desc'], opacity: [0, 1], translateY: [24, 0], duration: 900, delay: anime.stagger(120) }, '-=700')
-      .add({ targets: ['.hero-actions', '.hero-socials'], opacity: [0, 1], translateY: [24, 0], duration: 900, delay: anime.stagger(120) }, '-=700');
-  } else {
-    document.querySelectorAll('.a-hero').forEach((el) => (el.style.opacity = 1));
-  }
+    if (window.anime && !reduced) {
+      anime.timeline({ easing: 'easeOutExpo' })
+        .add({ targets: '.hero-badge', opacity: [0, 1], translateY: [24, 0], duration: 900 })
+        .add({ targets: '.hero-last', opacity: [0, 1], translateX: [80, 0], duration: 1100 }, '-=700')
+        .add({ targets: ['.hero-role', '.hero-desc'], opacity: [0, 1], translateY: [24, 0], duration: 900, delay: anime.stagger(120) }, '-=800')
+        .add({ targets: ['.hero-actions', '.hero-socials'], opacity: [0, 1], translateY: [24, 0], duration: 900, delay: anime.stagger(120) }, '-=700');
+    } else {
+      document.querySelectorAll('.a-hero').forEach((el) => (el.style.opacity = 1));
+    }
   }
 
   /* ── 6. ANIME.JS : révélation au scroll ─────────────────── */
@@ -215,59 +215,86 @@
     form.reset();
   });
 
-  /* ── 10. INTRO : préchargeur façon lenis.dev ────────────── */
-  // Gros titre qui monte lettre par lettre, compteur 000 → 100,
-  // puis le rideau se lève et révèle le hero.
-  const pre = document.getElementById('preloader');
+  /* ── 10. INTRO façon lenis.dev ──────────────────────────────
+     1) écran de couleur unie
+     2) les lettres L-U-C-A-S apparaissent en grand (3 + 2)
+     3) elles voyagent (FLIP) vers leur place dans le titre du hero
+        pendant que le fond uni se retire par le bas
+     ----------------------------------------------------------- */
+  const intro = document.getElementById('intro');
   const root = document.documentElement;
+  const heroLetters = [...document.querySelectorAll('.hero-name .hl')];
 
   function endIntro() {
     root.classList.remove('is-loading');
-    if (pre) pre.remove();
+    if (intro) intro.remove();
     if (lenis) lenis.start();
   }
 
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   window.scrollTo(0, 0);
 
-  if (!pre || !window.anime || reduced) {
+  if (!intro || !window.anime || reduced) {
+    heroLetters.forEach((l) => (l.style.opacity = 1));
     endIntro();
     playHero();
   } else {
-    const title = document.getElementById('pre-title');
-    title.innerHTML = [...title.dataset.text]
-      .map((c) => (c === ' ' ? '<span class="ch sp">&nbsp;</span>' : '<span class="ch"><span>' + c + '</span></span>'))
-      .join('');
-    const chars = title.querySelectorAll('.ch:not(.sp) > span');
-    const countEl = document.getElementById('pre-count');
-    const barEl = document.getElementById('pre-bar');
-    const counter = { v: 0 };
+    const bg = document.getElementById('intro-bg');
+    const wrappers = [...document.querySelectorAll('#intro-letters .il')];
+    const glyphs = [...document.querySelectorAll('#intro-letters .il-g')];
 
-    // On attend la fin du chargement de la page (6 s max)
+    // On attend la police gothique + le chargement de la page (filets de sécurité)
+    const fontReady = Promise.race([
+      document.fonts ? document.fonts.load('900 100px "Grenze Gotisch"', 'LUCAS') : Promise.resolve(),
+      new Promise((r) => setTimeout(r, 3000))
+    ]);
     const pageLoaded = document.readyState === 'complete'
       ? Promise.resolve()
       : new Promise((r) => window.addEventListener('load', r, { once: true }));
-    const safe = Promise.race([pageLoaded, new Promise((r) => setTimeout(r, 6000))]);
+    const pageReady = Promise.race([pageLoaded, new Promise((r) => setTimeout(r, 5000))]);
 
-    anime({ targets: chars, translateY: ['110%', '0%'], duration: 1100, delay: anime.stagger(55, { start: 200 }), easing: 'easeOutExpo' });
-
-    const counting = anime({
-      targets: counter, v: 100, duration: 2400, easing: 'easeInOutQuart',
-      update: () => {
-        countEl.textContent = String(Math.round(counter.v)).padStart(3, '0');
-        barEl.style.transform = 'scaleX(' + counter.v / 100 + ')';
-      }
-    }).finished;
-
-    Promise.all([counting, safe]).then(() => {
-      // Le hero démarre pendant que le rideau monte
-      setTimeout(playHero, 1000);
-      anime.timeline({ easing: 'easeInOutExpo' })
-        .add({ targets: chars, translateY: ['0%', '-110%'], duration: 750, delay: anime.stagger(30) })
-        .add({ targets: ['.pre-top', '.pre-bottom', '.pre-bar'], opacity: [1, 0], duration: 400, easing: 'linear' }, '-=650')
-        .add({ targets: pre, translateY: ['0%', '-100%'], duration: 1100 }, '-=250')
-        .finished.then(endIntro);
+    Promise.all([fontReady, pageReady]).then(() => {
+      // 2) Apparition des lettres (après ~0,6 s de couleur unie)
+      anime({
+        targets: wrappers,
+        opacity: [0, 1],
+        translateY: [90, 0],
+        scale: [0.88, 1],
+        duration: 1000,
+        delay: anime.stagger(130, { start: 600 }),
+        easing: 'easeOutExpo'
+      }).finished.then(() => setTimeout(fly, 450));
     });
+
+    // 3) Les lettres rejoignent le titre, le fond se retire
+    function fly() {
+      const to = heroLetters.map((l) => l.getBoundingClientRect());
+      const from = glyphs.map((g) => g.getBoundingClientRect());
+      glyphs.forEach((g) => (g.style.transformOrigin = '0 0'));
+
+      const flight = anime({
+        targets: glyphs,
+        translateX: (el, i) => to[i].left - from[i].left,
+        translateY: (el, i) => to[i].top - from[i].top,
+        scale: (el, i) => to[i].height / from[i].height,
+        duration: 1500,
+        delay: anime.stagger(70),
+        easing: 'easeInOutExpo'
+      });
+
+      const wipe = { v: 0 };
+      anime({
+        targets: wipe, v: 100, duration: 1300, delay: 250, easing: 'easeInOutQuart',
+        update: () => { bg.style.clipPath = 'inset(0 0 ' + wipe.v + '% 0)'; }
+      });
+
+      setTimeout(playHero, 1100);
+
+      flight.finished.then(() => {
+        heroLetters.forEach((l) => (l.style.opacity = 1)); // le vrai titre prend le relais
+        requestAnimationFrame(endIntro);
+      });
+    }
   }
 
   // Nettoyage Vanta si la page est quittée
