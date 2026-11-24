@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test – My Hand</title>
+  <style>
+    @font-face {
+      font-family: "MyHand";
+      src: url("fonts/MyHand-Regular.woff2") format("woff2"),
+           url("fonts/MyHand-Regular.otf") format("opentype");
+      font-display: swap;
+    }
+    body { margin: 0; padding: 48px 24px; background: #2b32e0; color: #ffd93b; font-family: "MyHand", cursive; }
+    h1 { font-size: clamp(48px, 10vw, 96px); margin: 0 0 24px; font-weight: normal; }
+    p { font-size: clamp(28px, 5vw, 44px); line-height: 1.4; margin: 0 0 16px; }
+    textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 36px; background: transparent; color: inherit; border: 2px dashed #ffd93b; padding: 12px; }
+    small { font-family: system-ui, sans-serif; font-size: 14px; opacity: .8; display: block; margin: 24px 0 8px; }
+  </style>
+</head>
+<body>
+  <h1>My Hand</h1>
+  <p>the quick brown fox jumps over the lazy dog</p>
+  <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 !?&amp;@#</p>
+  <p>Lucas Rajany – Portfolio</p>
+  <small>Écris ton texte (les lettres accentuées passent en police de secours, la font n'en a pas) :</small>
+  <textarea rows="3">Salut, je m'appelle Luc.</textarea>
+</body>
+</html>
