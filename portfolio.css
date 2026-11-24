@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'MyHand';
+  src: url('fonts/MyHand-Regular.woff2') format('woff2'), url('fonts/MyHand-Regular.otf') format('opentype');
+  font-display: swap;
+}
+
 /* ───────── Variables ───────── */
 :root {
   --bg: #07070d;
@@ -10,8 +16,8 @@
   --accent-2: #7dd3fc;
   --grad: linear-gradient(135deg, #38bdf8 0%, #7dd3fc 100%);
   --radius: 18px;
-  --font: 'Space Grotesk', system-ui, sans-serif;
-  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font: 'MyHand', 'Space Grotesk', system-ui, sans-serif;
+  --mono: 'MyHand', 'JetBrains Mono', ui-monospace, monospace;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -260,7 +266,7 @@ footer span { color: var(--text); font-weight: 600; }
 
 /* ───────── Intro façon lenis.dev ───────── */
 :root {
-  --blackletter: 'Grenze Gotisch', 'UnifrakturCook', serif;
+  --blackletter: 'MyHand', 'Grenze Gotisch', 'UnifrakturCook', serif;
   --intro: #38bdf8;   /* fond uni de l'intro (bleu) */
   --title: #31b6eb;   /* = bleu #38bdf8 « difference » sur le fond #07070d du site */
 }
