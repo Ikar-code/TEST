@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veille IA - L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</title>
+    <link>https://github.com/Ikar-code/TEST</link>
+    <description>Veille technologique automatisee sur : L'Impact De L'Ia Sur La Cybersécurité Des Systèmes Iot (Aiot)</description>
+    <language>fr</language>
+    <lastBuildDate>Sat, 28 Nov 2026 06:46:59 +0000</lastBuildDate>
+    <pubDate>Sat, 28 Nov 2026 06:46:59 +0000</pubDate>
+  <item>
+    <title>Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’</title>
+    <link>https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/</link>
+    <description>Anthropic CEO Dario Amodei is pushing back against claims that Anthropic believes we should “surrender human free will” to AI systems. In a long X post on Wednesday, Amodei called the suggestion “absurd.”
+
+“We should never sacrifice legitimacy or self-determination at the altar of efficiency or security,” he wrote. Earlier this month, OpenAI CEO Sam Altman said he wanted to ensure people continue to have “agency over the future.”
+
+Meta’s chief AI officer Alexandr Wang also wrote in an essay on X that we “should not be okay with a ‘handover’ of society to AI.”
+
+“It is hard to imagine a world where humanity can maintain control over fully unconstrained recursive self-improvement,” Wang wrote.</description>
+    <pubDate>Sat, 28 Nov 2026 06:46:59 +0000</pubDate>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/</guid>
+  </item>
+  <item>
+    <title>Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware</title>
+    <link>https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html</link>
+    <description>Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. "Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed legitimate programs," South Korean cybersecurity company AhnLab said. Q-Dir, also called the Quad Directory Explorer, is a free, lightweight file manager for Windows developed by SoftwareOK.</description>
+    <pubDate>Sat, 28 Nov 2026 06:46:59 +0000</pubDate>
+    <guid isPermaLink="true">https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html</guid>
+  </item>
+  <item>
+    <title>U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion</title>
+    <link>https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html</link>
+    <description>Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in "unauthorized access to a limited subset of its systems," the bureau said on Tuesday. As a precaution, it has taken some systems offline. The bureau collects suspicious activity reports and other Bank Secrecy Act (BSA) filings from banks and other financial institutions and analyzes them to fight money laundering and terrorist financing.</description>
+    <pubDate>Sat, 28 Nov 2026 06:46:59 +0000</pubDate>
+    <guid isPermaLink="true">https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html</guid>
+  </item>
+  </channel>
+</rss>
